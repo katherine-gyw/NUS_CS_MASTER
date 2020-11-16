@@ -1,0 +1,31 @@
+Client exception: java.rmi.UnmarshalException: error unmarshalling return; nested exception is: 
+	java.lang.ClassNotFoundException: error creating dynamic proxy class (no security manager: RMI class loader disabled)
+java.rmi.UnmarshalException: error unmarshalling return; nested exception is: 
+	java.lang.ClassNotFoundException: error creating dynamic proxy class (no security manager: RMI class loader disabled)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:130)
+	at Game.main(Game.java:26)
+Caused by: java.lang.ClassNotFoundException: error creating dynamic proxy class (no security manager: RMI class loader disabled)
+	at java.rmi/sun.rmi.server.LoaderHandler.loadProxyClass(LoaderHandler.java:556)
+	at java.rmi/java.rmi.server.RMIClassLoader$2.loadProxyClass(RMIClassLoader.java:646)
+	at java.rmi/java.rmi.server.RMIClassLoader.loadProxyClass(RMIClassLoader.java:311)
+	at java.rmi/sun.rmi.server.MarshalInputStream.resolveProxyClass(MarshalInputStream.java:254)
+	at java.base/java.io.ObjectInputStream.readProxyDesc(ObjectInputStream.java:1936)
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1887)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2183)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1707)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:517)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:475)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:127)
+	... 1 more
+Caused by: java.lang.IllegalArgumentException: Tracker is not an interface
+	at java.base/java.lang.reflect.Proxy$ProxyBuilder.validateProxyInterfaces(Proxy.java:697)
+	at java.base/java.lang.reflect.Proxy$ProxyBuilder.<init>(Proxy.java:636)
+	at java.base/java.lang.reflect.Proxy.lambda$getProxyConstructor$1(Proxy.java:435)
+	at java.base/jdk.internal.loader.AbstractClassLoaderValue$Memoizer.get(AbstractClassLoaderValue.java:329)
+	at java.base/jdk.internal.loader.AbstractClassLoaderValue.computeIfAbsent(AbstractClassLoaderValue.java:205)
+	at java.base/java.lang.reflect.Proxy.getProxyConstructor(Proxy.java:433)
+	at java.base/java.lang.reflect.Proxy.getProxyClass(Proxy.java:393)
+	at java.rmi/sun.rmi.server.LoaderHandler.loadProxyClass(LoaderHandler.java:699)
+	at java.rmi/sun.rmi.server.LoaderHandler.loadProxyClass(LoaderHandler.java:670)
+	at java.rmi/sun.rmi.server.LoaderHandler.loadProxyClass(LoaderHandler.java:540)
+	... 11 more
