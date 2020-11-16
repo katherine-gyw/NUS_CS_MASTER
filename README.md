@@ -1,1 +1,1 @@
-# CS5223_Distributed_System
+# NUS Computer Science Master Courses
