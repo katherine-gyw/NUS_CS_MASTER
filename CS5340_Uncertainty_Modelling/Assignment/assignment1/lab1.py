@@ -3,7 +3,6 @@ See accompanying PDF for instructions.
 
 Name: GUO YUEWEN
 Email: e0575795@u.nus.edu
-Student ID: A0225161R.
 """
 
 import copy
